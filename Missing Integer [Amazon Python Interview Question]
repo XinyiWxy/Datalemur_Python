@@ -1,0 +1,6 @@
+def missing_int(input: list[int])-> int:
+  input_set = set(input)
+  n = len(input) + 1
+  for i in range(n):
+    if i not in input_set:
+      return i
